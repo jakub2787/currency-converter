@@ -1,0 +1,21 @@
+html {
+    box-sizing: border-box;
+  }
+  *, *:before, *:after {
+    box-sizing: inherit;
+}
+.body {
+    max-width: 1000px;
+    margin: auto;
+    width: 100%;
+    font-family: 'Lato', sans-serif;
+}
+.header {
+  text-align: center;
+  font-weight: 700;
+  font-size: 40px;
+  padding: 20px;
+}
+.footer {
+  text-align: center;
+}
