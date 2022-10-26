@@ -8,6 +8,7 @@
     <title>Currency converter</title>
     <script defer src="js/script.js"></script>
     <link href="css/form.css" rel="stylesheet">
+    <link href="element/form.css" rel="stylesheet">
     <link href="css/body.css" rel="stylesheet">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
@@ -18,40 +19,42 @@
 </head>
 
 <body class="body">
-    <header class="header">Walutujmy razem</header>
-    <main>
-        <form class="form js-form">
-            <fieldset class="form__fieldset">
-                <legend class="form__legend">Kalkulator walut</legend>
-                <label class="form__label">
-                    <span class="form__labelText">
-                        Kwota do przeliczenia:
-                    </span>
-                    <input class="form__input js-amount" type="number" required min="1" step="1">
-                </label>
-                <p>
+    <div class="body__element">
+        <header class="header">Walutujmy razem</header>
+        <main>
+            <form class="form js-form">
+                <fieldset class="form__fieldset">
+                    <legend class="form__legend">Kalkulator walut</legend>
                     <label class="form__label">
                         <span class="form__labelText">
-                            Waluta:
+                            Kwota do przeliczenia:
                         </span>
-                        <select class="form__input js-currency" name="Select a currency">
-                            <option value="EUR">EUR</option>
-                            <option value="USD">USD</option>
-                            <option value="NOK">NOK</option>
-                        </select>
+                        <input class="form__input js-amount" type="number" required min="1" step="1">
                     </label>
-                </p>
-                <button class="form__button js-form__button">Przelicz</button>
-                <p>
-                    <label class="form__label">
-                        Otrzymasz:
-                        <strong class="js-result"></strong>
-                    </label>
-                </p>
-            </fieldset>
-        </form>
-    </main>
-    <footer class="footer">©Copyright by Jakub Woźny. Wszelkie prawa zastrzeżone.</footer>
+                    <p>
+                        <label class="form__label">
+                            <span class="form__labelText">
+                                Waluta:
+                            </span>
+                            <select class="form__input js-currency" name="Select a currency">
+                                <option value="EUR">EUR</option>
+                                <option value="USD">USD</option>
+                                <option value="NOK">NOK</option>
+                            </select>
+                        </label>
+                    </p>
+                    <button class="form__button js-form__button">Przelicz</button>
+                    <p>
+                        <label class="form__label">
+                            Otrzymasz:
+                            <strong class="js-result"></strong>
+                        </label>
+                    </p>
+                </fieldset>
+            </form>
+        </main>
+        <footer class="footer">©Copyright by Jakub Woźny. Wszelkie prawa zastrzeżone.</footer>
+    </div>
 </body>
 
 </html>
