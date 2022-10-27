@@ -9,13 +9,21 @@ html {
     margin: auto;
     width: 100%;
     font-family: 'Lato', sans-serif;
+    background-image: url("../images/background.jpg");
+    background-size: cover;
+    overflow: auto;
 }
 .header {
   text-align: center;
   font-weight: 700;
   font-size: 40px;
   padding: 20px;
+  color: aliceblue;
 }
 .footer {
   text-align: center;
+  background-color:hsl(0, 0%, 100%);
+  padding: 15px;
+  width: 100%;
+  margin-top: 45.5%;
 }
