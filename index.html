@@ -8,7 +8,7 @@
     <meta property="og:image" content="images/share.png">
     <title>Currency converter</title>
     <script defer src="js/script.js"></script>
-    <link rel="icon" href="images/iconn.png">
+    <link rel="icon" href="images/icon.png">
     <link href="css/form.css" rel="stylesheet">
 
     <link href="css/body.css" rel="stylesheet">
@@ -21,16 +21,16 @@
 </head>
 
 <body class="body">
-    <header class="header">Walutujmy razem</header>
-    <main>
+    <main class="main">
         <form class="form js-form">
+            <h1 class="form__header">Kalkulator walutowy</h1>
             <fieldset class="form__fieldset">
-                <legend class="form__legend">Kalkulator walut</legend>
                 <label class="form__label">
                     <span class="form__labelText">
                         Kwota do przeliczenia:
                     </span>
-                    <input placeholder="Wpisz kwotę w zł" class="form__input js-amount" type="number" required min="1" step="1">
+                    <input placeholder="Wpisz kwotę w zł" class="form__input js-amount" type="number" required min="1"
+                        step="0.01">
                 </label>
                 <p>
                     <label class="form__label">
@@ -54,7 +54,6 @@
             </fieldset>
         </form>
     </main>
-    <footer class="footer">©Copyright by Jakub Woźny. Wszelkie prawa zastrzeżone.</footer>
 </body>
 
 </html>
